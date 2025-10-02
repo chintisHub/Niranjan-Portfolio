@@ -62,17 +62,14 @@ const Hero = () => {
                 {/* Enhanced image with modern styling */}
                 <div className="flex-shrink-0 order-1 lg:order-2 animate-fade-in delay-300">
                   <div className="relative group">
-                    <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-64 lg:h-80 rounded-3xl overflow-hidden border-3 border-white shadow-2xl mx-auto transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-3xl">
+                    <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-3 border-white shadow-2xl mx-auto transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-3xl">
                       <img
-                        src={getAssetPath("/profile.png")}
+                        src={getAssetPath("/profile.jpg")}
                         alt="Sai Niranjan - Profile Photo"
                         className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
-                    {/* Floating decoration */}
-                    <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-400 rounded-full shadow-lg animate-bounce delay-1000"></div>
-                    <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-blue-400 rounded-full shadow-lg animate-bounce delay-1500"></div>
                   </div>
                 </div>
               </div>
