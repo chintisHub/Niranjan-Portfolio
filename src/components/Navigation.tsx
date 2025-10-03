@@ -57,42 +57,42 @@ const Navigation = () => {
   const isHomeSection = location.pathname === '/';
 
   return (
-    <nav className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/50 backdrop-blur-md shadow-lg border-gray-400/30' : 'bg-white/20 backdrop-blur-md border-gray-400/40'
-    } border rounded-full px-6 py-1.5`}>
+    <nav className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-500 ease-out ${
+      isScrolled ? 'bg-white/70 backdrop-blur-2xl shadow-[0_4px_16px_rgb(0,0,0,0.08)] border-gray-200/50' : 'bg-white/50 backdrop-blur-2xl border-gray-200/40'
+    } border rounded-full px-6 py-2`}>
       <div className="flex items-center space-x-4">
-        {/* Brand Logo */}
+        {/* Brand Logo - Apple style */}
         <button
           onClick={scrollToHome}
-          className="bg-gray-600/20 backdrop-blur-md border border-gray-400/40 shadow-lg rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-600/30 transition-all duration-300"
+          className="bg-[#f5f5f7] backdrop-blur-md border border-gray-200/40 shadow-[0_2px_8px_rgb(0,0,0,0.04)] rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-200 transition-all duration-400 ease-out"
         >
-          <span className="text-lg font-bold text-black hover:text-gray-600 transition-colors duration-200 font-styrene">
+          <span className="text-base font-semibold text-[#1d1d1f] hover:text-[#0071e3] transition-colors duration-300 font-styrene">
             N
           </span>
         </button>
 
-        {/* Navigation Links */}
-        <div className="flex space-x-6">
+        {/* Navigation Links - Apple style */}
+        <div className="flex space-x-1">
           <button
             onClick={() => scrollToSection('home')}
-            className={`text-sm transition-colors duration-200 font-medium font-styrene ${
-              isHomeSection ? 'text-black bg-gray-600/20 px-3 py-1 rounded-full' : 'text-black hover:text-gray-600'
+            className={`text-sm transition-all duration-400 ease-out font-normal font-styrene px-3 py-1.5 rounded-full ${
+              isHomeSection ? 'text-[#1d1d1f] bg-[#f5f5f7]' : 'text-[#86868b] hover:text-[#1d1d1f]'
             }`}
           >
             Home
           </button>
           <button
             onClick={handleProjectsClick}
-            className={`text-sm transition-colors duration-200 font-medium font-styrene ${
-              isCurrentPage('/projects') ? 'text-black bg-gray-600/20 px-3 py-1 rounded-full' : 'text-black hover:text-gray-600'
+            className={`text-sm transition-all duration-400 ease-out font-normal font-styrene px-3 py-1.5 rounded-full ${
+              isCurrentPage('/projects') ? 'text-[#1d1d1f] bg-[#f5f5f7]' : 'text-[#86868b] hover:text-[#1d1d1f]'
             }`}
           >
             Projects
           </button>
           <button
             onClick={() => navigate('/contact')}
-            className={`text-sm transition-colors duration-200 font-medium font-styrene ${
-              isCurrentPage('/contact') ? 'text-black bg-gray-600/20 px-3 py-1 rounded-full' : 'text-black hover:text-gray-600'
+            className={`text-sm transition-all duration-400 ease-out font-normal font-styrene px-3 py-1.5 rounded-full ${
+              isCurrentPage('/contact') ? 'text-[#1d1d1f] bg-[#f5f5f7]' : 'text-[#86868b] hover:text-[#1d1d1f]'
             }`}
           >
             Contact

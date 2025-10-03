@@ -93,29 +93,26 @@ const About = () => {
         <div 
           className="text-center"
         >
-          <div className="w-full max-w-6xl mx-auto bg-white/60 backdrop-blur-sm px-6 md:px-12 py-12 md:py-20 rounded-3xl relative overflow-hidden border border-white/40 shadow-2xl">
+          <div className="w-full max-w-6xl mx-auto bg-white/80 backdrop-blur-xl px-6 md:px-12 py-12 md:py-20 rounded-[2.5rem] relative overflow-hidden border border-gray-200/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <div className="text-center mb-16 animate-fade-in">
-            <div className="inline-block bg-white/70 backdrop-blur-sm rounded-2xl px-8 py-4 shadow-lg border border-white/50 mb-6">
-              <h2 className="text-sm font-semibold text-slate-600 mb-3 tracking-wider uppercase">
-                About Me
+              <h2 className="text-sm font-medium text-[#86868b] mb-3 tracking-wide">
+                ABOUT ME
               </h2>
-              <h3 className="text-4xl md:text-5xl font-bold text-slate-900 font-styrene tracking-tight">
+              <h3 className="text-4xl md:text-5xl font-semibold text-[#1d1d1f] font-styrene tracking-tight">
                 Background & Experience
               </h3>
-              <div className="w-24 h-1 bg-gradient-to-r from-slate-900 via-zinc-400 to-gray-800 rounded-full mx-auto mt-4"></div>
-            </div>
           </div>
 
-            <div className="max-w-4xl mx-auto space-y-6 text-base md:text-lg text-slate-800 leading-relaxed font-styrene">
+            <div className="max-w-4xl mx-auto space-y-6 text-base md:text-lg text-[#86868b] leading-relaxed font-styrene">
               <p>
-                I am Sai Niranjan Nallam, a Software Engineer with over 3 years of experience in full-stack development,
+                I am Sai Niranjan Nallam, a <span className="text-[#1d1d1f]">Software Engineer</span> with over 3 years of experience in full-stack development,
                 distributed systems, and cloud infrastructure. I specialize in building scalable microservices,
                 high-performance systems, and cloud-native applications across various technology stacks.
               </p>
               <p>
                 My expertise spans across backend engineering, system design, and cloud platforms (AWS, Azure), where I have contributed to
-                building and optimizing microservices architectures, ETL pipelines, and real-time systems. Currently pursuing my Master of Science
-                in Computer Science at the University at Buffalo, I previously worked as a Software Engineer at Darwinbox and interned at Amazon.
+                building and optimizing microservices architectures, ETL pipelines, and real-time systems. Currently pursuing my <span className="text-[#1d1d1f]">Master of Science
+                in Computer Science</span> at the University at Buffalo, I previously worked as a Software Engineer at Darwinbox and interned at Amazon.
               </p>
               <p>
                 My motivation lies in leveraging modern technologies, distributed systems, and cloud platforms to build scalable solutions
@@ -126,20 +123,17 @@ const About = () => {
         </div>
 
         {/* Experience Section */}
-          <div className="w-full max-w-6xl mx-auto bg-white/60 backdrop-blur-sm px-6 md:px-12 py-12 md:py-20 rounded-3xl relative overflow-hidden border border-white/40 shadow-2xl">
+          <div className="w-full max-w-6xl mx-auto bg-white/80 backdrop-blur-xl px-6 md:px-12 py-12 md:py-20 rounded-[2.5rem] relative overflow-hidden border border-gray-200/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
 
 
             <div className="text-center mb-16 animate-fade-in">
-            <div className="inline-block bg-white/70 backdrop-blur-sm rounded-2xl px-8 py-4 shadow-lg border border-white/50 mb-6">
-              {/* <h2 className="text-sm font-semibold text-slate-600 mb-3 tracking-wider uppercase">
-                Portfolio
-              </h2> */}
-              <h3 className="text-4xl md:text-5xl font-bold text-slate-900 font-styrene tracking-tight">
+              <h2 className="text-sm font-medium text-[#86868b] mb-3 tracking-wide">
+                EXPERIENCE
+              </h2>
+              <h3 className="text-4xl md:text-5xl font-semibold text-[#1d1d1f] font-styrene tracking-tight">
                 Professional Experience
               </h3>
-              <div className="w-24 h-1 bg-gradient-to-r from-slate-900 via-zinc-400 to-gray-800 rounded-full mx-auto mt-4"></div>
-            </div>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-light">
+            <p className="text-lg text-[#86868b] max-w-3xl mx-auto leading-relaxed font-normal mt-4">
               A journey through innovative companies where I've built scalable data solutions
             </p>
           </div>
@@ -155,16 +149,16 @@ const About = () => {
                   className="cursor-pointer"
                   onClick={() => setSelectedExperience(exp)}
                 >
-                  <Card className="overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 bg-white/40 backdrop-blur-md">
+                  <Card className="overflow-hidden border border-gray-200/50 shadow-[0_4px_20px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-700 ease-out bg-white/80 backdrop-blur-xl">
                     <CardContent className="p-0">
                       <div className="flex flex-col md:flex-row">
                         {/* Company Image with Grey Background */}
-                        <div className="md:w-48 h-40 md:h-auto flex-shrink-0 relative overflow-hidden flex items-center justify-center p-6 bg-gray-100">
-                          <div className="w-32 h-32 rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-110 transition-transform duration-300 overflow-hidden">
-                            <img 
-                              src={exp.image} 
+                        <div className="md:w-48 h-40 md:h-auto flex-shrink-0 relative overflow-hidden flex items-center justify-center p-6 bg-[#f5f5f7]">
+                          <div className="w-32 h-32 rounded-full bg-white shadow-[0_4px_16px_rgb(0,0,0,0.08)] flex items-center justify-center hover:scale-105 transition-transform duration-700 ease-out overflow-hidden">
+                            <img
+                              src={exp.image}
                               alt={exp.company}
-                              className={`object-contain rounded-full hover:scale-120 transition-transform duration-300 w-64 h-64 scale-125`}
+                              className={`object-contain rounded-full transition-transform duration-700 ease-out w-64 h-64 scale-125`}
                             />
                           </div>
                         </div>
@@ -172,31 +166,31 @@ const About = () => {
                         <div className="flex-1 p-8">
                           <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                             <div>
-                              <h5 className="text-2xl font-bold text-black mb-2 font-styrene group-hover:text-slate-700 transition-colors">
+                              <h5 className="text-2xl font-semibold text-[#1d1d1f] mb-2 font-styrene transition-colors">
                                 {exp.company}
                               </h5>
-                              <p className="text-slate-700 font-medium text-lg mb-2 font-styrene">
+                              <p className="text-[#86868b] font-normal text-lg mb-2 font-styrene">
                                 {exp.role}
                               </p>
                             </div>
-                            <span className="inline-block bg-white/60 text-slate-800 text-sm font-medium px-4 py-2 rounded-full whitespace-nowrap">
+                            <span className="inline-block bg-[#f5f5f7] text-[#1d1d1f] text-sm font-normal px-4 py-2 rounded-full whitespace-nowrap">
                               {exp.period}
                             </span>
                           </div>
-                          <p className="text-slate-700 mb-6 leading-relaxed">
+                          <p className="text-[#86868b] mb-6 leading-relaxed">
                             {exp.details.substring(0, 150)}...
                           </p>
                           <div className="flex flex-wrap gap-2">
                             {exp.technologies.slice(0, 6).map((tech, techIndex) => (
-                              <span 
-                                key={techIndex} 
-                                className="text-xs bg-white/60 text-slate-700 px-3 py-1 rounded-full border border-white/40 hover:bg-white/80 transition-colors"
+                              <span
+                                key={techIndex}
+                                className="text-xs bg-[#f5f5f7] text-[#1d1d1f] px-3 py-1.5 rounded-full border border-gray-200/50 hover:bg-gray-100 transition-all duration-300 ease-out"
                               >
                                 {tech}
                               </span>
                             ))}
                             {exp.technologies.length > 6 && (
-                              <span className="text-xs text-slate-600 px-2 py-1">
+                              <span className="text-xs text-[#86868b] px-2 py-1">
                                 +{exp.technologies.length - 6} more
                               </span>
                             )}
@@ -212,19 +206,16 @@ const About = () => {
 
         {/* Education Section */}
         <div>
-          <div className="w-full max-w-6xl mx-auto bg-white/60 backdrop-blur-sm px-6 md:px-12 py-12 md:py-20 rounded-3xl relative overflow-hidden border border-white/40 shadow-2xl">
+          <div className="w-full max-w-6xl mx-auto bg-white/80 backdrop-blur-xl px-6 md:px-12 py-12 md:py-20 rounded-[2.5rem] relative overflow-hidden border border-gray-200/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
 
             <div className="text-center mb-16 animate-fade-in">
-            <div className="inline-block bg-white/70 backdrop-blur-sm rounded-2xl px-8 py-4 shadow-lg border border-white/50 mb-6">
-              {/* <h2 className="text-sm font-semibold text-slate-600 mb-3 tracking-wider uppercase">
-                Portfolio
-              </h2> */}
-              <h3 className="text-4xl md:text-5xl font-bold text-slate-900 font-styrene tracking-tight">
+              <h2 className="text-sm font-medium text-[#86868b] mb-3 tracking-wide">
+                EDUCATION
+              </h2>
+              <h3 className="text-4xl md:text-5xl font-semibold text-[#1d1d1f] font-styrene tracking-tight">
                 Academic Journey
               </h3>
-              <div className="w-24 h-1 bg-gradient-to-r from-slate-900 via-zinc-400 to-gray-800 rounded-full mx-auto mt-4"></div>
-            </div>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-light">
+            <p className="text-lg text-[#86868b] max-w-3xl mx-auto leading-relaxed font-normal mt-4">
               Educational foundation that shaped my analytical thinking and technical expertise
             </p>
           </div>
@@ -240,16 +231,16 @@ const About = () => {
                   className="cursor-pointer"
                   onClick={() => setSelectedEducation(edu)}
                 >
-                  <Card className="overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 bg-white/40 backdrop-blur-md">
+                  <Card className="overflow-hidden border border-gray-200/50 shadow-[0_4px_20px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-700 ease-out bg-white/80 backdrop-blur-xl">
                     <CardContent className="p-0">
                       <div className="flex flex-col md:flex-row">
                         {/* Institution Image with Grey Background */}
-                        <div className="md:w-48 h-40 md:h-auto flex-shrink-0 relative overflow-hidden flex items-center justify-center p-6 bg-gray-100">
-                          <div className="w-32 h-32 rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-110 transition-transform duration-300 overflow-hidden">
-                            <img 
-                              src={edu.image} 
+                        <div className="md:w-48 h-40 md:h-auto flex-shrink-0 relative overflow-hidden flex items-center justify-center p-6 bg-[#f5f5f7]">
+                          <div className="w-32 h-32 rounded-full bg-white shadow-[0_4px_16px_rgb(0,0,0,0.08)] flex items-center justify-center hover:scale-105 transition-transform duration-700 ease-out overflow-hidden">
+                            <img
+                              src={edu.image}
                               alt={edu.institution}
-                              className="w-28 h-28 object-contain rounded-full hover:scale-110 transition-transform duration-300"
+                              className="w-28 h-28 object-contain rounded-full transition-transform duration-700 ease-out"
                             />
                           </div>
                         </div>
@@ -257,38 +248,38 @@ const About = () => {
                         <div className="flex-1 p-8">
                           <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                             <div>
-                              <h5 className="text-2xl font-bold text-black mb-2 font-styrene group-hover:text-slate-700 transition-colors">
+                              <h5 className="text-2xl font-semibold text-[#1d1d1f] mb-2 font-styrene transition-colors">
                                 {edu.institution}
                               </h5>
-                              <p className="text-slate-700 font-medium text-lg mb-2 font-styrene">
+                              <p className="text-[#86868b] font-normal text-lg mb-2 font-styrene">
                                 {edu.degree}
                               </p>
                             </div>
                             <div className="flex flex-col items-end gap-2">
-                              <span className="inline-block bg-white/60 text-slate-800 text-sm font-medium px-4 py-2 rounded-full whitespace-nowrap">
+                              <span className="inline-block bg-[#f5f5f7] text-[#1d1d1f] text-sm font-normal px-4 py-2 rounded-full whitespace-nowrap">
                                 {edu.period}
                               </span>
                               {edu.gpa && (
-                                <span className="inline-block bg-green-50/80 text-green-700 text-sm font-medium px-4 py-2 rounded-full">
+                                <span className="inline-block bg-[#f5f5f7] text-[#1d1d1f] text-sm font-normal px-4 py-2 rounded-full">
                                   GPA: {edu.gpa}
                                 </span>
                               )}
                             </div>
                           </div>
-                          <p className="text-slate-700 mb-6 leading-relaxed">
+                          <p className="text-[#86868b] mb-6 leading-relaxed">
                             {edu.details.substring(0, 150)}...
                           </p>
                           <div className="flex flex-wrap gap-2">
                             {edu.coursework.slice(0, 6).map((course, courseIndex) => (
-                              <span 
-                                key={courseIndex} 
-                                className="text-xs bg-white/60 text-slate-700 px-3 py-1 rounded-full border border-white/40 hover:bg-white/80 transition-colors"
+                              <span
+                                key={courseIndex}
+                                className="text-xs bg-[#f5f5f7] text-[#1d1d1f] px-3 py-1.5 rounded-full border border-gray-200/50 hover:bg-gray-100 transition-all duration-300 ease-out"
                               >
                                 {course}
                               </span>
                             ))}
                             {edu.coursework.length > 6 && (
-                              <span className="text-xs text-slate-600 px-2 py-1">
+                              <span className="text-xs text-[#86868b] px-2 py-1">
                                 +{edu.coursework.length - 6} more
                               </span>
                             )}
