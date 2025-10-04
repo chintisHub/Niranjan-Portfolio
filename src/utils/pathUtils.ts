@@ -4,10 +4,7 @@
  * In development, this will be '/'
  */
 export const getBasePath = (): string => {
-  // Check if we're in production (GitHub Pages)
-  if (import.meta.env.PROD) {
-    return '/niranjanPortfolio/';
-  }
+  // Always use root path for chintishub.github.io
   return '/';
 };
 
